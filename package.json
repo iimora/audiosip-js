@@ -1,0 +1,22 @@
+{
+  "name": "audiosip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.17",
+    "cors": "^2.8.5",
+    "fluent-ffmpeg": "^2.1.2",
+    "formidable": "^1.2.1",
+    "moment": "^2.23.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-google": "^0.11.0"
+  }
+}
