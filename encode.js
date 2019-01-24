@@ -3,8 +3,8 @@ const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;
 
 ffmpeg.setFfmpegPath(ffmpegPath);
 
-function encodeMp3Command(srcPath) {
-  return ffmpeg(srcPath)
+function encodeMp3Command(src) {
+  return ffmpeg(src)
       .withAudioChannels(2)
       .withAudioFrequency(44100)
       .withAudioBitrate(320)
@@ -29,8 +29,8 @@ function encodeMp3Command(srcPath) {
       });
 };
 
-exports.encodeMp3ToStream = function encodeMp3ToStream(srcPath, toStream) {
-  encodeMp3Command(srcPath)
+exports.encodeMp3ToStream = function encodeMp3ToStream(src, toStream) {
+  encodeMp3Command(src)
       .pipe(toStream, {
         end: true,
       });
