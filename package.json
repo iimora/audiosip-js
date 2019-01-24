@@ -10,9 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.17",
+    "busboy": "^0.3.0",
     "cors": "^2.8.5",
     "fluent-ffmpeg": "^2.1.2",
-    "formidable": "^1.2.1",
     "moment": "^2.23.0"
   },
   "devDependencies": {
